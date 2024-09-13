@@ -135,12 +135,6 @@ html {
   border-top: solid 3.55px var(--clr-primary-two);
 }
 
-.card__section:hover {
-  animation: pulse-animation 2s infinite;
-  backface-visibility: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-
 .card__section:nth-child(2) {
   border-top: solid 3.55px var(--clr-primary-one);
 }
@@ -153,10 +147,8 @@ html {
   border-top: solid 3.55px var(--clr-primary-four);
 }
 
-.card__svg-container {
-  display: flex;
-  justify-content: end;
-  margin-top: 2.5rem;
+.card__section-svg {
+  margin-left: auto;
   margin-top: 2.063rem;
 }
 
@@ -225,19 +217,5 @@ html {
     box-shadow: 0px 10px 20px hsl(234, 12%, 34%, 0.1),
       -10px 5px 10px hsl(229, 6%, 66%, 0.05),
       10px 5px 10px hsl(229, 6%, 66%, 0.05);
-  }
-}
-
-@keyframes pulse-animation {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
   }
 }
