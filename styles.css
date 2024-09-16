@@ -124,6 +124,8 @@ html {
   gap: 1.5rem;
   margin-top: 4.75rem;
   font-family: poppins;
+  max-width: 28.125rem;
+  margin-inline: auto;
 }
 
 .card__section {
@@ -166,6 +168,11 @@ html {
 /* Half way between 375px - 1440px */
 @media only screen and (min-width: 50rem) {
   /* Experimental grid */
+
+  .card__container {
+    max-width: 56.25rem;
+  }
+
   .card {
     display: flex;
     justify-content: center;
@@ -217,12 +224,18 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 69.375rem;
+    max-width: 95rem;
+  }
+
+  .card__section {
+    min-width: 27.5rem;
+    width: 29.375rem;
   }
 
   .card__container {
+    justify-items: center;
+    min-width: 100%;
     display: grid;
-    width: 100%;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
